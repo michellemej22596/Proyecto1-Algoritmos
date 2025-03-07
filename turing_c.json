@@ -1,0 +1,12 @@
+{
+    "estados": [
+      "q0",
+      "qCheck",
+      "qSum",
+      "qUpdate",
+      "qDecrement",
+      "qAccept"
+    ],
+    "e_ini": "q0",
+    "e_end": ["qAccept"] 
+  }
