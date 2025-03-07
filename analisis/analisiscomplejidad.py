@@ -89,5 +89,5 @@ def main():
     imprimir_analisis(valores, tiempos)
     generar_grafico_complejidad(valores, tiempos)
 
-if __file__ == "_main_":
+if __name__ == "__main__":
     main()
