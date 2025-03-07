@@ -6,7 +6,7 @@ def calcular_fibonacci():
     n = int(input())
 
     print("\n 🟢 Iniciando Máquina de Turing...")
-    maquina = CintaUnicaTuring("turing_c.json", n)
+    maquina = CintaUnicaTuring("Machine Setup/turing_c.json", n)
 
     print("⚙️ Ejecutando cálculo...")
 

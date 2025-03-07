@@ -84,7 +84,7 @@ class CintaUnicaTuring:
 
 
    
-config_file = "turing_c.json"
+config_file = "Machine Setup/turing_c.json"
 n = 6  
 machine = CintaUnicaTuring(config_file, n)
 resultado, traza = machine.run()
