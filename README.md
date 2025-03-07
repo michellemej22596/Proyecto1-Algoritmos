@@ -77,5 +77,9 @@ Esto generará gráficos de dispersión con la notación **Big-O, Theta y Omega*
 ---
 
 ## Resultados
-
-Una vez ejecutado el análisis, se generará un gráfico de complejidad
+- La Máquina de Turing ejecutará correctamente la simulación de la sucesión de Fibonacci, mostrando los valores calculados y el tiempo de ejecución para cada n.
+- Se observará que el tiempo de ejecución aumenta conforme crece n, debido al incremento en los pasos requeridos por la máquina.
+- El gráfico de dispersión mostrará una tendencia creciente en los tiempos de ejecución, reflejando la complejidad del algoritmo.
+- El análisis de complejidad confirmará que el crecimiento del tiempo de ejecución es O(n) en el peor caso, con una tendencia cercana a Θ(n) en el caso promedio.
+- La regresión polinomial aplicada a los datos de tiempo mostrará un ajuste con un coeficiente de determinación R² cercano a 1, lo que validará la precisión del modelo de      complejidad teórica.
+- Los gráficos generados (big_o_theta_omega_comparison.png y regression_plot.png) se guardarán en la carpeta results/.
