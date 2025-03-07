@@ -5,12 +5,12 @@ import sys
 import os
 
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(_file_), "..")))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from turing import CintaUnicaTuring
 
 
-BASE_DIR = os.path.abspath(os.path.dirname(_file_))
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 CONFIG_PATH = os.path.join(BASE_DIR, "..", "turing_c.json")
 
 
@@ -89,5 +89,5 @@ def main():
     imprimir_analisis(valores, tiempos)
     generar_grafico_complejidad(valores, tiempos)
 
-if _name_ == "_main_":
+if __file__ == "_main_":
     main()
