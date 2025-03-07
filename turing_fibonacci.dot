@@ -1,0 +1,25 @@
+digraph TuringMachine {
+    rankdir=TB;
+    node [shape=circle, style=filled, fillcolor=lightblue];
+
+    q0 [label="q0 (Inicio)", shape=doublecircle, fillcolor=lightgray];
+    qCheck [label="qCheck (Verificar contador)"];
+    qSum [label="qSum (Sumar valores)", style=filled, fillcolor=lightyellow];
+    qUpdate [label="qUpdate (Actualizar valores)", style=filled, fillcolor=lightyellow];
+    qDecrement [label="qDecrement (Restar contador)"];
+    qAccept [label="qAccept (Final)", shape=doublecircle, fillcolor=lightgreen];
+
+    // Transiciones
+    q0 -> qAccept [label="IF N ≤ 2", color=red];
+    q0 -> qCheck [label="IF N > 2"];
+
+    qCheck -> qSum [label="Si Counter > 0"];
+    qCheck -> qAccept [label="Si Counter ≤ 0", color=red];
+
+    qSum -> qUpdate [label="Suma: Tape2 + Tape3 → Tape4", color=blue];
+    qUpdate -> qDecrement [label="Actualizar: T2 = T3, T3 = T4", color=blue];
+    qDecrement -> qCheck [label="Counter -1", color=purple];
+
+    // Estado final
+    qAccept -> qAccept [label="STOP", color=darkgreen];
+}
