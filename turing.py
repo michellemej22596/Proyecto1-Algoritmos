@@ -8,7 +8,7 @@ class CintaUnicaTuring:
             config = json.load(f)
 
         self.estados = config["estados"]
-        self.e_ini = config["_ini"]
+        self.e_ini = config["e_ini"]
         self.e_end = config["e_end"]
         self.transiciones = config["transiciones"]
 
